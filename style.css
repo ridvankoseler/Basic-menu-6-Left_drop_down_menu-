@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.container{
+    background-image: url(https://cdn.pixabay.com/photo/2021/10/30/08/27/mountains-6753786_960_720.jpg);
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    margin: auto;
+    
+    position: absolute;
+
+}
+
+.main{
+    background-color: chocolate;
+    width: 4%;
+    height: 50%;
+    cursor: pointer;
+    overflow: hidden;
+    pointer-events: none;
+    transition: 0.5s linear;
+    
+    
+}
+
+.main:hover{
+    width: 20%;
+    pointer-events: all;
+}
+
+.main:hover .list,.main:hover .menu, .main:hover .left{
+    visibility: visible;
+}
+
+.main:hover .left{
+    visibility:hidden ;
+    
+}
+
+.left{
+pointer-events: all;
+}
+
+.header{
+    background-color: #935F0D;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    padding: 0 10px;
+}
+
+.menu{
+    color: white;
+    padding-left: 30px;
+    padding-right: 15px;
+    font-size: 2rem;
+    font-weight: 200;
+    visibility: hidden;
+    margin: auto;
+}
+
+li{
+    list-style-type: none;
+    font-size: 2.2rem;
+    text-align: center;
+    margin: 2rem;
+    transition: all;
+}
+
+li:nth-child(1):hover{
+    background-color: grey;
+    width: 100%;
+    transform: scale(1.2, 1.1);
+}
+li:nth-child(2):hover{
+    background-color: red;
+    width: 100%;
+    transform: translateX(1.5);
+    
+}
+li:nth-child(3):hover{
+    background-color: yellow;
+    width: 100%;
+    transform: scale(1.5);
+}
+li:nth-child(4):hover{
+    background-color: green;
+    width: 100%;
+    transform: scaleZ(2)
+    display: block;
+}
+
+
+
+.list{
+    padding: 0.5rem 2.2rem;
+    visibility: hidden;
+}
+
+#big-point{
+    font-size: 2rem;
+}
+
